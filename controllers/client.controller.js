@@ -1,13 +1,5 @@
 const { json } = require("body-parser");
 
-const getAbout = async () => {
-  try {
-      return "about message controller";
-  } catch (err) {
-    console.error(err)
-  }
-}
-
 const createClient = async (name,code) => {
   console.log("name",name)
   const ClientModel = require("../models/client.model")
@@ -30,13 +22,11 @@ const createClient = async (name,code) => {
         "data":error
       }
     })
-      //return "about message controller";
   } catch (err) {
       return json({
         "result":"error",
         "data":err
       })
-    //console.error(err)
   }
 }
 
@@ -60,4 +50,4 @@ const getClient = async () => {
   })
 }
 
-module.exports = { getAbout, createClient, getClient }
+module.exports = { createClient, getClient }

@@ -7,8 +7,12 @@ let ClientSchema = new Schema({
     },
     name: {
         type: String, 
-        required: true, max: 100
+        required: true, 
+        max: 100
     },
+    additionalInformation: {
+        type:Object
+    }
 });
 // Exportar o modelo
 module.exports = mongoose.model('client', ClientSchema);
