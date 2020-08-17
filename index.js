@@ -8,3 +8,6 @@ const PORT = 3000;
 const app = require("./router");
 
 app.listen(PORT, () => console.log(`server is listening on port  ${PORT}`));
+
+// Export our app for testing purposes
+module.exports = app;

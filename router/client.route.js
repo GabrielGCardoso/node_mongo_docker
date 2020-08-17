@@ -11,4 +11,8 @@ router.get('/', async function(req, res) {
   res.send(await getClient());
 });
 
+router.get('/test', async function(req, res) {
+  res.send({"this is a mock":"mock object"});
+});
+
 module.exports = router;
