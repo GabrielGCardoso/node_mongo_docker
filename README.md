@@ -1,6 +1,6 @@
 Using mocha unit test
 
-    $(npm bin)/mocha <arquivo-de-teste>
+    $(npm bin)/mocha <test-file>
 
 Run project with docker
 
