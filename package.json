@@ -1,7 +1,7 @@
 {
-  "name": "smi",
+  "name": "persistence",
   "version": "1.0.0",
-  "description": "smi persistence",
+  "description": "persistence",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
